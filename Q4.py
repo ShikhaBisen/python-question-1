@@ -1,7 +1,12 @@
-n = int(input("enter value of n:"))
+# Write a program to check if a n0. is prime
+num = int(input("Enter a number: "))
 
-for i in range (2,n):
-    if(n%i==0):
-        print(n,"is not prime number")
+if num < 2:
+    print(f"{num} is not a prime number.")
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            print(f"{num} is not a prime number.")
+            break
     else:
-        print(n,"is even number")
+        print(f"{num} is a prime number.")

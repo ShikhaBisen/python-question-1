@@ -1,12 +1,9 @@
-n = int(input("enter value of n:"))
-f1 = 0
-f2 = 1
+# Print the fabonacci sequence up to n numbers
+n = int(input("Enter the number of terms: "))  
 
-for i in range(0,n+1):
-    if(n<=1):
-        print(1)
-    else:
-        fabonacci = f1+f2,
-        f1 = f2,
-        f2 = fabonacci
-        print(fabonacci)
+a, b = 0, 1  
+print("Fibonacci Series:")
+
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b  
