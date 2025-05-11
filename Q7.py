@@ -6,5 +6,5 @@ while num > 0:
     num //= 10  
 
 print(count)
-# dfghjk
+
 
